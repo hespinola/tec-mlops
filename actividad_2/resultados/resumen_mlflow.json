@@ -1,0 +1,18 @@
+{
+  "experiment_name": "TC5061_Baseline_Wine_Humberto Espinola",
+  "experiment_id": "1",
+  "run_id": "ff409bcea194449893a88ee7f27c1df8",
+  "status": "FINISHED",
+  "model_uri": "models:/m-6e31bf6973274aac831d1d6a45b89c1e",
+  "tracking_uri": "sqlite:////Users/hespinola/development/mna/mlops/actividad_2/mlflow_baseline.db",
+  "metrics": {
+    "test_accuracy": 0.9722222222222222,
+    "test_f1_macro": 0.9709618874773139,
+    "test_precision_macro": 0.9777777777777779,
+    "test_recall_macro": 0.9666666666666667,
+    "train_accuracy": 1.0,
+    "train_f1_macro": 1.0,
+    "reference_test_accuracy": 0.3888888888888889,
+    "reference_test_f1_macro": 0.18666666666666668
+  }
+}

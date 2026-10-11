@@ -1,0 +1,66 @@
+{
+  "dataframe_split": {
+    "columns": [
+      "alcohol",
+      "malic_acid",
+      "ash",
+      "alcalinity_of_ash",
+      "magnesium",
+      "total_phenols",
+      "flavanoids",
+      "nonflavanoid_phenols",
+      "proanthocyanins",
+      "color_intensity",
+      "hue",
+      "od280/od315_of_diluted_wines",
+      "proline"
+    ],
+    "data": [
+      [
+        13.28,
+        1.64,
+        2.84,
+        15.5,
+        110.0,
+        2.6,
+        2.68,
+        0.34,
+        1.36,
+        4.6,
+        1.09,
+        2.78,
+        880.0
+      ],
+      [
+        13.73,
+        1.5,
+        2.7,
+        22.5,
+        101.0,
+        3.0,
+        3.25,
+        0.29,
+        2.38,
+        5.7,
+        1.19,
+        2.71,
+        1285.0
+      ],
+      [
+        13.39,
+        1.77,
+        2.62,
+        16.1,
+        93.0,
+        2.85,
+        2.94,
+        0.34,
+        1.45,
+        4.8,
+        0.92,
+        3.22,
+        1195.0
+      ]
+    ]
+  }
+}

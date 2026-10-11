@@ -1,0 +1,32 @@
+[
+  {
+    "problema": "Faltantes",
+    "evidencia": "0 valores faltantes en predictores",
+    "decision": "Imputador por mediana ajustado solo con entrenamiento; sin faltantes no modifica valores.",
+    "justificacion": "Conservar filas y evitar aprender estadísticas de prueba."
+  },
+  {
+    "problema": "Duplicados",
+    "evidencia": "0 filas repetidas y 0 grupos contradictorios",
+    "decision": "Conservar las filas; no se detectó un problema que requiera eliminarlas.",
+    "justificacion": "No alterar los datos sin evidencia; impedir grupos repetidos en train y test."
+  },
+  {
+    "problema": "Tipos e infinitos",
+    "evidencia": "0 conversiones fallidas; 0 infinitos",
+    "decision": "Predictores float64; objetivo entero con significado categórico. Infinitos se marcan como faltantes.",
+    "justificacion": "Esquema numérico compatible con el modelo y etiquetas válidas."
+  },
+  {
+    "problema": "Posibles outliers",
+    "evidencia": "11 de 142 filas train señaladas por IQR",
+    "decision": "Conservar todos los extremos; no se aplican recortes.",
+    "justificacion": "IQR es un diagnóstico estadístico; puede señalar diferencias reales entre cultivares."
+  },
+  {
+    "problema": "Escalas diferentes",
+    "evidencia": "Desviaciones estándar en escalas originales distintas",
+    "decision": "StandardScaler dentro del pipeline, ajustado solo con entrenamiento.",
+    "justificacion": "La escala afecta la regularización de la regresión logística."
+  }
+]

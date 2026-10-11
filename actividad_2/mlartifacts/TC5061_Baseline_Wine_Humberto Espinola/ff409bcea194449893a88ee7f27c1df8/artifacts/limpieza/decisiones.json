@@ -1,0 +1,32 @@
+[
+  {
+    "problema": "Faltantes",
+    "evidencia": "0 valores faltantes en predictores",
+    "decision": "Imputador por mediana ajustado solo con entrenamiento; sin faltantes no modifica valores.",
+    "justificacion": "Conservar filas y evitar aprender estad\u00edsticas de prueba."
+  },
+  {
+    "problema": "Duplicados",
+    "evidencia": "0 filas repetidas y 0 grupos contradictorios",
+    "decision": "Conservar las filas; no se detect\u00f3 un problema que requiera eliminarlas.",
+    "justificacion": "No alterar los datos sin evidencia; impedir grupos repetidos en train y test."
+  },
+  {
+    "problema": "Tipos e infinitos",
+    "evidencia": "0 conversiones fallidas; 0 infinitos",
+    "decision": "Predictores float64; objetivo entero con significado categ\u00f3rico. Infinitos se marcan como faltantes.",
+    "justificacion": "Esquema num\u00e9rico compatible con el modelo y etiquetas v\u00e1lidas."
+  },
+  {
+    "problema": "Posibles outliers",
+    "evidencia": "11 de 142 filas train se\u00f1aladas por IQR",
+    "decision": "Conservar todos los extremos; no se aplican recortes.",
+    "justificacion": "IQR es un diagn\u00f3stico estad\u00edstico; puede se\u00f1alar diferencias reales entre cultivares."
+  },
+  {
+    "problema": "Escalas diferentes",
+    "evidencia": "Desviaciones est\u00e1ndar en escalas originales distintas",
+    "decision": "StandardScaler dentro del pipeline, ajustado solo con entrenamiento.",
+    "justificacion": "La escala afecta la regularizaci\u00f3n de la regresi\u00f3n log\u00edstica."
+  }
+]
