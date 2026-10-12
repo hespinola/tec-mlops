@@ -1,0 +1,13 @@
+{
+  "baseline_run_id": "6753e6f28bbd43bebce5f3b47fdf129c",
+  "checks": {
+    "identical_arguments": true,
+    "identical_dataset": true,
+    "identical_learned_state": true,
+    "identical_metrics": true,
+    "identical_splits": true
+  },
+  "command": "python train.py --c 1.0 --class-weight none --tol 0.0001 --run-name R04_baseline --max-iter 1000 --solver lbfgs --seed 42 --cv-folds 5 --batch entrega_20261011",
+  "repeat_run_id": "9bbbeda99694441c995ca32bc3274db0",
+  "scope": "Dos procesos independientes; mismo entorno, plataforma y versiones."
+}
